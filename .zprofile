@@ -1,6 +1,6 @@
 #!/bin/zsh
 # Adds `~/.local/bin` to $PATH
-export PATH="$PATH:${$(find ~/.local/bin -type d -printf %p:)%%:}"
+export PATH="$PATH:$HOME/.local/bin:$HOME/.local/bin/dwmblocks"
 
 unsetopt PROMPT_SP
 

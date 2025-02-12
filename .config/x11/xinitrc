@@ -1,6 +1,16 @@
 #!/bin/sh
 
-. "${XDG_CONFIG_HOME:-$HOME/.config}/x11/xprofile"
+# defaults
+xrandr --output eDP-1 --dpi 192
+xwallpaper --zoom ~/.config/x11/wallpaper.jpg
+xset r rate 250 30
+setxkbmap -option caps:escape pl
 
+# for laptop
+xinput set-prop "SYNA32CF:00 06CB:CECD Touchpad" "libinput Tapping Enabled" 1
+xinput set-prop "SYNA32CF:00 06CB:CECD Touchpad" "libinput Natural Scrolling Enabled" 1
+xinput set-prop "SYNA32CF:00 06CB:CECD Touchpad" "libinput Accel Speed" 0.2
+
+xcompmgr &
 dwmblocks &
 ssh-agent dwm

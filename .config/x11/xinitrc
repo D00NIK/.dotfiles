@@ -1,10 +1,10 @@
 #!/bin/sh
 
 # defaults
+setdisps
 xwallpaper --zoom ~/.config/x11/wallpaper.jpg
 xset r rate 250 30
 setxkbmap -option caps:escape pl
-setdisps
 
 # accel etc
 xinput set-prop "pointer:Razer Razer DeathAdder Essential" "libinput Accel Profile Enabled" 0 1 0

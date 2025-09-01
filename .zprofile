@@ -28,8 +28,8 @@ export SQLITE_HISTORY="$XDG_DATA_HOME/sqlite_history"
 export MOZ_USE_XINPUT2="1" # Mozilla smooth scrolling/touchpads.
 
 # HiDPI issues
-export QT_SCALE_FACTOR="2"
-export XCURSOR_SIZE="48"
+#export QT_SCALE_FACTOR="2"
+#export XCURSOR_SIZE="48"
 
 # Start graphical server on user's current tty if not already running.
 [ "$(tty)" = "/dev/tty1" ] && ! pidof -s Xorg >/dev/null 2>&1 && exec startx "$XINITRC"

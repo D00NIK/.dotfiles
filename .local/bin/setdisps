@@ -1,6 +1,7 @@
 #!/bin/sh
 
-if [[ $(xrandr --listactivemonitors | grep " DP-1") ]] then
+if [[ $(xrandr | grep "^DP-1 connected") ]] then
+    xrandr --output DP-1 --mode 1920x1080 --dpi 96
     xrandr --output eDP-1 --off
 else
     xrandr --output eDP-1 --mode 1920x1200 --dpi 96

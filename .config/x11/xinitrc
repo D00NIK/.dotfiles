@@ -14,4 +14,5 @@ xinput set-prop "SYNA32CF:00 06CB:CECD Touchpad" "libinput Accel Speed" 0.2
 
 xcompmgr &
 dwmblocks &
+redshift -l 52.2424:16.5547 &
 ssh-agent dwm
